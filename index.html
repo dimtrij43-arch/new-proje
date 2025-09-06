@@ -76,7 +76,7 @@
     <input type="password" id="password" placeholder="Пароль" autocomplete="off">
     
     <!-- reCAPTCHA -->
-    <div class="g-recaptcha" data-sitekey="6LcvY8ArAAAAAA-z8P32k7OO8bm4QGaSFqi_zQnu"></div>
+    <div class="g-recaptcha" data-sitekey="6LfsacArAAAAAE1CdlXu7Az460_GCPQhKMdL7C_r"></div>
     
     <button onclick="check()">Войти</button>
     <p id="error" class="error">Неверный пароль или капча!</p>
@@ -85,7 +85,7 @@
   <script>
     function check() {
       const pwd = document.getElementById('password').value;
-      const correctPassword = '7K1555'; // ← Замени на свой пароль
+      const correctPassword = '7K1555'; //
       if (pwd === correctPassword && grecaptcha.getResponse() !== "") {
         window.location.href = 'http://clasneiygoloc.tilda.ws/';
       } else {
